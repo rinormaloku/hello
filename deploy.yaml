@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kodata
+spec:
+  selector:
+    matchLabels:
+      app: kodata
+  template:
+    metadata:
+      labels:
+        app: kodata
+    spec:
+      containers:
+      - name: kodata
+        image: github.com/rinormaloku/hello
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
