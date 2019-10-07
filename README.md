@@ -8,3 +8,6 @@ export KO_DOCKER_REPO=docker.io/rinormaloku
 3. ko apply -f deploy.yaml
 
 (Ko will notice that this is within the path github.com/rinormaloku/hello for that reason it will build and push the container and replace the line: `image: github.com/rinormaloku/hello` and apply to the cluster for rapid development)
+
+
+Article from Matt: https://medium.com/knative/ko-fast-kubernetes-microservice-development-in-go-f94a934a7240
